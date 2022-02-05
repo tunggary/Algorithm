@@ -1,20 +1,18 @@
 #이코테 332p
 #아이디어: 아스키코드값으로 바꿔서 계산
 
-string = input()
+ string = input()
+ str_list = list(string)
 
-result_str = []
-result_num = 0
+ str_list.sort()
 
-for i in string:
-  if ord('1') <= ord(i) <= ord('9'):
-    result_num += int(i)
-  else:
-    result_str.append(i)
+ result_num = 0
+ result_string = ""
 
-result_str.sort()
+ for i in str_list:
+   if i.isalpha():
+     result_string += i
+   else:
+     result_num += int(i)
 
-#list를 str으로 바꾸고, int를 str로 바꿔서 합침
-result = ''.join(result_str) + str(result_num)
-
-print(result)
+ print(result_string + str(result_num))
