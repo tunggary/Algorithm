@@ -14,3 +14,10 @@ def union_parent(parent, x, y):
     parent[x] = y
   else:
     parent[y] = x
+    
+#정열된 배열에서 특정 수의 개수 구하기
+from bisect import bisect_left,bisect_right
+def count_by_range(a, left, right):
+  l_index = bisect_left(a, left)
+  r_index = bisect_right(a, right)
+  return r_index - l_index
