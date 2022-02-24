@@ -23,4 +23,5 @@ for _ in range(count):
             graph[row][col] += max(left_up, left_side, left_down)
             if col == m-1:
                 result = max(result, graph[row][col])
+                
     print(result)
