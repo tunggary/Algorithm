@@ -1,9 +1,10 @@
 #이코테 377p
-#아이디어: 퇴사일로부터 거꾸로 확인
+#아이디어: 바텀업 방식, 퇴사일로부터 거꾸로 확인
+
 n = int(input())
 time = []
 pay = []
-dp = [-1]*(n+1)
+dp = [0]*(n+1)
 max_value = 0
 
 for _ in range(n):
@@ -11,7 +12,7 @@ for _ in range(n):
     time.append(a)
     pay.append(b)
     
-#i번째 날부터 얻을 수 있는 최대 수익
+# i번째 날부터 얻을 수 있는 최대 수익
 for i in range(n-1,-1,-1):
     next_day = time[i] + i
     
@@ -22,3 +23,4 @@ for i in range(n-1,-1,-1):
         dp[i] = max_value
 
 print(max_value)
+
