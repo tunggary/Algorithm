@@ -27,6 +27,7 @@ for i in range(n):
         if graph[i][j] == 1:
             union_parent(parent, i+1, j+1)
 
+print(parent)
 find = find_parent(parent, plan[0])
 result = "YES"
 for i in range(1, len(plan)):
