@@ -21,3 +21,10 @@ def count_by_range(a, left, right):
   l_index = bisect_left(a, left)
   r_index = bisect_right(a, right)
   return r_index - l_index
+
+#소수 판별 알고리즘
+def is_prime_number(x):
+    for i in range(2, int(x**0.5)+1):
+        if x % i == 0:
+            return False
+    return True
