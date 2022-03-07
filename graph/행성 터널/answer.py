@@ -1,3 +1,6 @@
+#이코테 398p
+#아이디어: 크루스칼 알고리즘의 원리 정확히 파악. x,y,z 좌표의 값들을 따로 저장하고 sort하면 결국 가장 cost가 적은 값이 먼저 처리되고 union_parent됨
+
 import heapq
 
 def find_parent(parent, x):
