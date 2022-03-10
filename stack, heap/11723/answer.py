@@ -1,4 +1,5 @@
 #백준 11723번
+#아이디어: set 자료구조의 다양한 메서드를 이용한 풀이, python3 컴파일러로 돌려야함
 import sys
 n = int(sys.stdin.readline())
 s = set()
