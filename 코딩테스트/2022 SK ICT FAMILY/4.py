@@ -1,3 +1,4 @@
+# 잘못된 풀이 : n <= 300000 이어서 시간복잡도 O(n^3)인 플로이드 와샬로는 해결못함
 def solution(n, edges):
   INF = int(1e9)
   graph = [[INF]*n for _ in range(n)]
@@ -22,5 +23,3 @@ def solution(n, edges):
           if graph[i][j] + graph[j][k] <= graph[i][k]:
             count += 1
   return count
-
-print(solution(5,[[0,1],[0,2],[1,3],[1,4]]))
