@@ -50,4 +50,3 @@ def solution2(money, costs):
       money -= data[index][1]
       answer += data[index][2]  
   return answer
-  
