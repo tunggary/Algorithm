@@ -1,19 +1,4 @@
-# import sys
-# n,m = map(int, input().split())
-# data = dict()
-# for i in range(n):
-#   data[sys.stdin.readline().strip()] = i
-
-# answer = []
-# for i in range(m):
-#   input = sys.stdin.readline().strip()
-#   if data.get(input) != None:
-#     answer.append(input)
-
-# answer.sort()
-# print(len(answer))
-# for i in answer:
-#   print(i)
+#백준 1764번
 
 import sys
 n,m = map(int, sys.stdin.readline().split())
