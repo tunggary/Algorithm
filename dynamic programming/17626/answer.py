@@ -28,5 +28,6 @@ def check(n):
       if is_square[n-square[i]-square[j]]:
         return 3
   return 4
+
 print(check(n))
 
