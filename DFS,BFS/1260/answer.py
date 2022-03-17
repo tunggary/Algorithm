@@ -1,3 +1,6 @@
+#백준 1260번
+#아이디어: dfs,bfs를 통한 완전탐색
+
 n,m,v = map(int, input().split())
 graph = [[] for _ in range(n+1)]
 for _ in range(m):
