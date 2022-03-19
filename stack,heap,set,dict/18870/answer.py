@@ -8,4 +8,4 @@ data = list(map(int, input().split()))
 num = sorted(list(set(data)))
 dic = {num[i]:i for i in range(len(num))}
 for i in data:
-  print(dic[i], end=" ") 
+  print(dic[i], end=" ")
