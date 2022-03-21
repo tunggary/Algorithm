@@ -1,3 +1,6 @@
+#백준 1389번
+#아이디어: 모든 점에서 다른 모든점까지의 최단거리를 구하는 문제이므로 플로이드 와샬로 해결
+
 import sys
 n,m = map(int, sys.stdin.readline().split())
 INF = int(1e9)
