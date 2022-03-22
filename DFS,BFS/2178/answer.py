@@ -1,3 +1,6 @@
+#백준 2178번
+#아이디어: bfs를 이용한 최단거리 구하기
+
 import sys
 from collections import deque
 n,m = map(int, sys.stdin.readline().split())
