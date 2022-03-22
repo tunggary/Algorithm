@@ -1,7 +1,6 @@
 def solution(goods):
   goodslen = len(goods)
   
-  
   #각각의 문자열(pencil)로 만들 수 있는 모든 경우의 문자열(p,e,n,c,i,l,pe,en,...,pencil)을 넣을 집합 리스트
   goodsset= [set() for _ in range(goodslen)]
   for i in range(goodslen):
