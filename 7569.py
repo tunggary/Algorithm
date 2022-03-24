@@ -73,6 +73,8 @@ dx = [0,1,0,-1,0,0]
 dy = [1,0,-1,0,0,0]
 dz = [0,0,0,0,1,-1]
 
+q = deque()
+
 def check():
   value = 0
   for z in range(h):
@@ -84,10 +86,7 @@ def check():
   return value - 1
   
 
-def bfs(x,y,z):
-  global m,n,h
-  q = deque()
-  q.append((x,y,z))
+def bfs():
   while q:
     cx,cy,cz = q.popleft()
     for i in range(6):
@@ -103,6 +102,7 @@ for z in range(h):
   for x in range(n):
     for y in range(m):
       if graph[z][x][y] == 1:
-        bfs(x,y,z)
+        q.append((x,y,z))
+bfs()
 
 print(check())
