@@ -12,11 +12,12 @@ def solution(abilities, k):
   answer = 0
   
   while q:
+    now = heappop(q)
     if k > 0:
-      answer += heappop(q)[1]
+      answer += now[1]
       k -= 1
     else:
-      answer += heappop(q)[2]
+      answer += now[2]
   return answer
 
-solution([7, 6, 8, 9, 10],1)
+print(solution([2, 8, 3, 6, 1, 9, 1, 9], 2))
