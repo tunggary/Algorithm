@@ -25,5 +25,4 @@ def solution(arr, brr):
             answer += 1
     return answer
 #누적합
-print(solution([3,7,2,4],[4,5,5,2]))
-  
+print(solution([4,2,3],[3,2,4]))
