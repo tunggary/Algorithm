@@ -1,3 +1,6 @@
+#백준 10026번
+#아이디어: bfs를 이용한 완전탐색
+
 from collections import deque
 import sys
 n = int(sys.stdin.readline())
@@ -43,4 +46,3 @@ for i in range(n):
       redGreen += 1
       
 print(normal, redGreen)
-      
