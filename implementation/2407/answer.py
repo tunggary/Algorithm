@@ -1,3 +1,6 @@
+#백준 2407번
+#아이디어: factorial을 dp로 이용해서 구현
+
 import sys
 
 dp = [-1]*101

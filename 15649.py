@@ -11,9 +11,6 @@ def dfs():
     return
   for i in range(1,N+1):
     if i not in array:
-      if array:
-        if array[-1] > i:
-          continue
       array.append(i)
       dfs()
       array.pop()

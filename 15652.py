@@ -1,7 +1,6 @@
 import sys
 
 N,M = map(int, sys.stdin.readline().split())
-
 array = []
 
 def dfs():
@@ -10,12 +9,11 @@ def dfs():
     print(' '.join(map(str, array)))
     return
   for i in range(1,N+1):
-    if i not in array:
-      if array:
-        if array[-1] > i:
-          continue
-      array.append(i)
-      dfs()
-      array.pop()
+    if array:
+      if array[-1] > i:
+        continue
+    array.append(i)
+    dfs()
+    array.pop()
   
 dfs()
