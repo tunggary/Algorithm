@@ -1,3 +1,6 @@
+#백준 11053번
+#아이디어: 가장 긴 증가하는 수열
+
 import sys
 
 n = int(sys.stdin.readline())
