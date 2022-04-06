@@ -1,3 +1,6 @@
+#백준 15666번
+#아이디어: 백트래킹
+
 import sys
 
 n,m = map(int, sys.stdin.readline().split())
