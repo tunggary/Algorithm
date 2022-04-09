@@ -31,16 +31,17 @@ while True:
 
 # postOrder(start)
 
-def postOrder(first, last):
-  if first > last:
+def preOrder(first, last):
+  if first < last:
     return 
-  mid = last + 1
-  for i in range(first+1, last+1):
-    if nodes[first] < nodes[i]:
+  mid = last - 1
+  for i in range(first-1, last, -1):
+    if nodes[first] > nodes[i]:
       mid = i
       break
-  postOrder(first+1,mid-1)
-  postOrder(mid,last)
+    
   print(nodes[first])
+  preOrder(mid-1,last)
+  preOrder(first-1,mid)
 
-postOrder(0, len(nodes)-1)
+preOrder(len(nodes)-1, 0)
