@@ -28,6 +28,3 @@ def solution(path):
     answer.append(string)
     time += distance
   return answer
-  
-print(solution("EEESEEEEEENNNN"))
-# solution("SSSSSSWWWNNNNNN")
