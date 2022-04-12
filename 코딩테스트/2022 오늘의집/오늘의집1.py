@@ -29,6 +29,5 @@ def solution(path):
     time += distance
   return answer
   
-[(E,3), (S,1), (E, 6), (N,4)]
 print(solution("EEESEEEEEENNNN"))
 # solution("SSSSSSWWWNNNNNN")
