@@ -1,3 +1,6 @@
+#백준 1916번
+#아이디어: 다익스트라
+
 import sys
 from heapq import heappop, heappush
 
