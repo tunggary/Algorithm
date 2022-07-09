@@ -1,6 +1,5 @@
 from collections import defaultdict
 
-
 def solution(rooms, target):
     seatInfo = defaultdict(set)
     for room in rooms:
@@ -11,8 +10,10 @@ def solution(rooms, target):
         else:
             roomNum = splitData[0][1:5]
             splitData[0] = splitData[0][6:]
+            
         for name in splitData:
             seatInfo[name].add(int(roomNum))
+            
     sortData = []    
     for name, rooms in seatInfo.items():
         if target in rooms:
